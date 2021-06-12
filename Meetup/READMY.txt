@@ -1,0 +1,46 @@
+//////////////////////////////////////////////////////
+MEET:
+//////////////////////////////////////////////////////
+Show all meet:
+GET -> /api/meet/
+Show meet (id):
+GET -> /api/meet/id
+Update meet (id):
+PUT -> /api/meet
+	JSON {"name": "Common room",
+        "dateMeet": "2021-06-12T11:04:29.4355798",
+        "informationAboutMeet": "If you want to meet and study"
+	}
+Create meet:
+POST -> /api/meet
+	JSON {"name": "Common room",
+        "dateMeet": "2021-06-12T11:04:29.4355798",
+        "informationAboutMeet": "If you want to meet and study",
+        "firstNameLecturer": "Maciej",
+        "lastNameLecturer": "Będkowski"
+	}
+Delete meet (id):
+DELETE -> /api/meet/id
+
+//////////////////////////////////////////////////////
+PARTICIPANT:
+//////////////////////////////////////////////////////
+Show all participant:
+GET -> /api/participant/
+Show participant (id):
+GET -> /api/participant/id
+Update participant (id):
+PUT -> /api/participant
+	JSON{"firstName": "Maciej",
+        "lastName": "Będkowski",
+        "eMail": "mathias@gmail.com"
+	}
+Create participant:
+POST -> /api/participant
+	JSON {"firstName": "Maciej",
+        "lastName": "Będkowski",
+        "eMail": "mathias@gmail.com",
+        "meetId": 6
+	}
+Delete participant (id):
+DELETE -> /api/participant/id
